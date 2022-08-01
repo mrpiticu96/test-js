@@ -1,0 +1,60 @@
+#users-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    #users-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+#users-list > li {
+    border: solid #DFDFE2;
+    border-radius: 6px;
+    padding: 1rem;
+    list-style: none;
+}
+
+#users-list > li > :not(:first-child) {
+    margin-top: 0.5rem;
+}
+
+#users-list > li > a {
+    padding: 8px;
+    border-radius: 6px;
+    background: #5664E1;
+    text-align: center;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+img {
+    width: 75px;
+    height: 75px;
+}
+
+#data-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-title {
+    margin: 1rem 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.sort-button {
+    margin-right: 12px;
+    padding: 12px;
+    border: solid #DFDFE2;
+    cursor: pointer;
+}
